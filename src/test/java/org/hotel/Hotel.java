@@ -10,8 +10,8 @@ import org.loginpage.SelectHotel;
 public class Hotel extends BaseClass {
 	public static void main(String[] args) throws InterruptedException{
 		BaseClass bs = new BaseClass();
-		bs.getDriver();
-		bs.launchUrl("http://adactinhotelapp.com/");
+		BaseClass.getDriver();
+		BaseClass.launchUrl("http://adactinhotelapp.com/");
 		LoginPage lp = new LoginPage();
 		bs.enterText(lp.getTxtUserName(), "Thandapaniraji");
 		bs.enterText(lp.getTxtPassword(), "prathi11");
