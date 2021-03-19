@@ -26,10 +26,12 @@ public class Sample extends BaseClass {
 		@Test
 		public void tc() throws IOException {
 			lp = new LoginPage();
-			baseClass.enterText(lp.getTxtUserName(), baseClass.getSheet
-					("C:\\Users\\Parvez\\OneDrive\\Documents\\Clone\\Sample\\WorkBook\\Sample.xlsx", "Hotel", 1, 0));
-			baseClass.enterText(lp.getTxtPassword(), baseClass.getSheet
-					("C:\\Users\\Parvez\\OneDrive\\Documents\\Clone\\Sample\\WorkBook\\Sample.xlsx", "Hotel", 1, 1));
+			baseClass.enterText(lp.getTxtUserName(), "Thandapaniraji");
+			baseClass.enterText(lp.getTxtPassword(), "prathi11");
+//			baseClass.enterText(lp.getTxtUserName(), baseClass.getSheet
+//					("C:\\Users\\Parvez\\OneDrive\\Documents\\Clone\\Sample\\WorkBook\\Sample.xlsx", "Hotel", 1, 0));
+//			baseClass.enterText(lp.getTxtPassword(), baseClass.getSheet
+//					("C:\\Users\\Parvez\\OneDrive\\Documents\\Clone\\Sample\\WorkBook\\Sample.xlsx", "Hotel", 1, 1));
 			baseClass.buttonClick(lp.getBtnLogin());
 		}
 		
